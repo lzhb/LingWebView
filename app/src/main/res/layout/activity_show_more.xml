@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:id="@+id/ly_tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:id="@+id/txt_showmore_activities"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawablePadding="3dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="活动"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txt_showmore_faq"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawablePadding="3dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="FAQ"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txt_questionnaire"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawablePadding="3dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="问卷"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txt_showmore_my"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawablePadding="3dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="我的"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+    <TextView android:id="@+id/title"
+              android:text="lingling"
+              android:layout_width="match_parent"
+              android:layout_height="30dp"
+              android:layout_marginLeft="16dp"
+              android:layout_marginRight="16dp"
+              android:gravity="center"
+              android:textSize="18dp"
+        >
+
+    </TextView>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/ly_tab_bar"
+        android:id="@+id/ly_content"
+        android:layout_marginTop="30dp"
+        >
+    </FrameLayout>
+
+
+</RelativeLayout>
